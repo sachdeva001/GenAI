@@ -1,6 +1,7 @@
 package com.sachdeva.openai.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,12 @@ public class ChatController {
 	
 	@GetMapping("/chat")
 	public String chat(@RequestParam("message") String message) {
+		
+		return "Success";
+	}
+	
+	@PostMapping("/chat")
+	public String chat1(@RequestParam("message") String message) {
 		
 		return "Success";
 	}
