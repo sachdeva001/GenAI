@@ -17,10 +17,5 @@ public class ChatController {
 		return "Success";
 	}
 	
-	@PostMapping("/chat")
-	public String chat1(@RequestParam("message") String message) {
-		
-		return "Success";
-	}
 
 }
